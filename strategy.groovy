@@ -21,16 +21,24 @@ class Multiply implements Calc {
     def execute(a, b) { a * b }
 }
 
-def sampleData = [
-        [1, 2, 2],
-        [3, 1, 3],
-        [4, 2, 8]
-]
+class Add implements Calc {
+    def execute(a, b) { a + b }
+}
 
-Calc[] calculationStrategies = [
-        new Multiply()
-]
+class Subtract implements Calc {
+    def execute(a, b) { a - b }
+}
 
+Calc[] calculationStrategies = [new Add()]
+def sampleData = [[3,4,7]]
+testStrategyPattern(sampleData, calculationStrategies)
+
+calculationStrategies = [new Subtract()]
+sampleData = [[3,4,-1]]
+testStrategyPattern(sampleData, calculationStrategies)
+
+calculationStrategies = [new Multiply()]
+sampleData = [[3,4,12]]
 testStrategyPattern(sampleData, calculationStrategies)
 
 /* Using Groovydoc example - http://groovy.codehaus.org/Strategy+Pattern */
@@ -57,7 +65,7 @@ sampleData = [
 
 testStrategyPattern(sampleData, calculationStrategies)
 
-/* Groovier way of doing the above  */
+/* Groovier way of doing the above; so much cooler */
 
 calculationStrategies = [
         {a, b -> a * b},
