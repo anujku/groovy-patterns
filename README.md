@@ -5,12 +5,9 @@ Groovy-Patterns
 
 A collection of design patterns and idioms in Groovy based on [Python Patterns](https://github.com/faif/python-patterns "Python Patterns").
 
-The purpose of this repo is not only to learn the design patterns but also see their implementation in python which will help revise some of python and implement them in groovy which is my primary language of development right now. I will be adding the files mentioned in the README as the time goes on and keep it upto date with latest patterns implemented in the mentioned python repo as well as whatever new patterns I come acrros.
+The purpose of this repo is not only to learn the design patterns but also see their implementation in python which will help revise some of python and implement them in groovy which is my primary language of development currently. I will be adding the files mentioned in the README as the time goes on and keep it upto date with latest patterns implemented in the mentioned python repo as well as whatever new patterns I come acrros.
 
-When an implementation is added or modified, be sure to update this file and
-rerun `append_output.sh` (eg. ./append_output.sh borg.py) to keep the output
-comments at the bottom up to date.
-
+For best reference on design patterns using Groovy please refer documentation - [Groovy design patterns] [http://groovy.codehaus.org/Design+Patterns+with+Groovy]
 
 Current Patterns:
 
